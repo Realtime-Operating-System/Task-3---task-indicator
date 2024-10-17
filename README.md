@@ -18,6 +18,17 @@ This project demonstrates how to use FreeRTOS with a priority-based preemptive s
 1. HAL Library: STM32 HAL library for GPIO and system configuration.
 2. FreeRTOS: Real-Time Operating System for task scheduling.
 
+## Circuit Description
+
+- **Pin PA11** is connected to the positive leg of the **Green LED**, which is responsible for running a task.
+- **Pin PA10** is connected to the positive leg of the **Clear LED**, which acts as an indicator that the task is running.
+- **Pin PA9** is connected to the positive leg of the **Red LED**, which is responsible for running another task.
+- **Pin PA8** is connected to the positive leg of another **Clear LED**, which also acts as an indicator that the task is running.
+- All negative legs of the LEDs are connected to **pull-down resistors**.
+- The remaining legs of the resistors are connected to **ground**.
+
+This setup ensures that the tasks are indicated clearly by the respective LEDs, and pull-down resistors help stabilize the LED states.
+
 ## How It Works
 ### 1. Red LED Task (Higher Priority):
 The red LED task has a higher priority (osPriorityAboveNormal).
