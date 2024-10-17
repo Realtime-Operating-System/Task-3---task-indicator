@@ -10,8 +10,8 @@ This project demonstrates how to use FreeRTOS with a priority-based preemptive s
 
 ## Hardware Requirements
 1. Microcontroller: STM32F103C8T6.
-2. Development Board: Blue Pill (STM32F103C8T6).
-3. LEDs: Two external LEDs (Red and Green), or you can use onboard LEDs if available.
+2. Breadboard.
+3. LEDs: External LEDs (Red and Green), or you can use onboard LEDs if available.
 4. IDE/Toolchain: STM32CubeMX, STM32CubeIDE, or any supported ARM GCC toolchain.
 
 ## Software Requirements
